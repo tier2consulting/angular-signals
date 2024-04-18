@@ -1,0 +1,14 @@
+@import "base";
+
+#next-original {
+  left: calc(50% - 0.5 * $button-gap - $button-width);
+  @include next-button
+}
+
+h1 {
+  @include head-title
+}
+
+p {
+  @include head-content
+}

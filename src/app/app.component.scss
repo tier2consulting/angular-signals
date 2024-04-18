@@ -1,0 +1,30 @@
+@import "base";
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+
+  span {
+    opacity: .7;
+  }
+}
+
+#parent {
+  position: absolute;
+  top: 5rem;
+  left: 2rem;
+  height: calc(90% - 10rem);
+  width: calc(100% - 8rem);
+  border: 1px solid #ffffff1f;
+  padding: 2rem;
+  background: linear-gradient(0deg, #ffffff00 0%, #ffffff0f 100%);
+
+  h1 {
+    @include head-title
+  }
+
+  p {
+    @include head-content
+  }
+}
